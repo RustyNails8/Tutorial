@@ -1,0 +1,110 @@
+IN10C2@WLGGCEOL000e9 MINGW64 ~
+$ git config --global user.name "Sumit Das"
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~
+$ git config --global user.email sumit8das@gmail.com
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~
+$ git config --global core.editor "'C:\Program Files (x86)\Notepad++\notepad++.exe' -multiInst -nosession"
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+diff.astextplain.textconv=astextplain
+rebase.autosquash=true
+credential.helper=manager
+user.name=Sumit Das
+user.email=sumit8das@gmail.com
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.required=true
+core.editor='C:\Program Files (x86)\Notepad++\notepad++.exe' -multiInst -nosession
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~
+$ git config user.name
+Sumit Das
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~
+$ git config user.email
+sumit8das@gmail.com
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~
+$ git help config
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~
+$ cd C:\Users\in10c2\Box Sync\BOC\SIsupport\UNIXscripts\git\GENESIS
+bash: cd: C:Usersin10c2Box: No such file or directory
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~
+$ cd "C:\Users\in10c2\Box Sync\BOC\SIsupport\UNIXscripts\git\GENESIS"
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~/Box Sync/BOC/SIsupport/UNIXscripts/git/GENESIS
+$ git init
+Initialized empty Git repository in C:/Users/in10c2/Box Sync/BOC/SIsupport/UNIXscripts/git/GENESIS/.git/
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~/Box Sync/BOC/SIsupport/UNIXscripts/git/GENESIS (master)
+$ git add *.c
+fatal: pathspec '*.c' did not match any files
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~/Box Sync/BOC/SIsupport/UNIXscripts/git/GENESIS (master)
+$ git add LICENSE
+fatal: pathspec 'LICENSE' did not match any files
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~/Box Sync/BOC/SIsupport/UNIXscripts/git/GENESIS (master)
+$ git commit -m 'initial project version'
+On branch master
+
+Initial commit
+
+Untracked files:
+        scripts/
+
+nothing added to commit but untracked files present
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~/Box Sync/BOC/SIsupport/UNIXscripts/git/GENESIS (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        scripts/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~/Box Sync/BOC/SIsupport/UNIXscripts/git/GENESIS (master)
+$ git add *
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~/Box Sync/BOC/SIsupport/UNIXscripts/git/GENESIS (master)
+$ git add LICENSE
+fatal: pathspec 'LICENSE' did not match any files
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~/Box Sync/BOC/SIsupport/UNIXscripts/git/GENESIS (master)
+$ git commit -m 'initial project version'
+[master (root-commit) 83a8f4e] initial project version
+ 5 files changed, 391 insertions(+)
+ create mode 100644 scripts/BASH/dashboard_demo.sh
+ create mode 100644 scripts/BASH/dashboard_ftp_demo.sh
+ create mode 100644 scripts/BASH/fscheckGEN.sh
+ create mode 100644 scripts/BASH/fschekGEN_tablespace_orasids.txt
+ create mode 100644 scripts/BASH/tablespace_sql.sh
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~/Box Sync/BOC/SIsupport/UNIXscripts/git/GENESIS (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~/Box Sync/BOC/SIsupport/UNIXscripts/git/GENESIS (master)
+$ git status -s
+
+IN10C2@WLGGCEOL000e9 MINGW64 ~/Box Sync/BOC/SIsupport/UNIXscripts/git/GENESIS (master)
