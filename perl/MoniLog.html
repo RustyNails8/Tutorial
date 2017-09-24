@@ -1,0 +1,865 @@
+<html>
+<head><title></title></head>
+<body>
+moni-server-v.5.0.sh
+debug
+Entries initially read from LPARLIST:  8
+am1ho118	GPA	70	CI	3512	10.139.113.70
+am1ho120	GPA	70	DB	3512	10.139.113.236
+am1ho116	GPA	71	AP	3512	10.139.113.71
+am2ho127	GPA	72	AP	3512	10.139.113.72
+am2ho133	GPA	73	AP	3512	10.139.113.73
+am2ho127	GPA	75	AP	3512	10.139.113.75
+am1ho116	GPA	78	AP	3512	10.139.113.78
+am2ho133	GPA	79	AP	3512	10.139.113.79
+I am in for loop now...
+For loop started...
+1
+Entries from LPARLIST: 
+am1ho118 GPA 70 CI 3512 10.139.113.70
+am1ho118
+GPA
+70
+CI
+3512
+10.139.113.70
+moni-server-v.2.5.sh
+
+Check OS specifications:
+------------------------
+Fri Jun 12 01:28:00 MSZ 2015
+am1ho118
+AIX am1ho118 1 6 00F950F14C00
+6100-08-03-1339
+Server is up for          =  53 Days
+Last  1 Min. CPU Average Load =  1.34
+Last  5 Min. CPU Average Load =  1.64
+Last 10 Min. CPU Average Load =  2.02
+
+Check Swap Space:
+-----------------
+Total Swap Space          =  20352MB
+Swap Space Used in %      =  1
+
+Check CPU Utilization:
+----------------------
+User CPU %     =     4
+System CPU %   =     1
+IDLE CPU %     =     95
+WAIT CPU %     =     0
+
+Top 10 CPU processes:
+--------------------
+USER          PID %CPU %MEM   SZ  RSS    TTY STAT    STIME  TIME COMMAND
+gpaadm   26935486  3.3  5.0 1197324 1206284      - A    17:24:39 190:59 dw.sapGPA_DVEB
+root      1114146  0.4  0.0  448  448      - A      Apr 20 3596:15 wait
+root      1048608  0.4  0.0  448  448      - A      Apr 20 3594:10 wait
+root       983070  0.4  0.0  448  448      - A      Apr 20 3411:37 wait
+gpaadm   26607694  0.4  0.0 88844 97740      - A    00:16:50  3:36 dw.sapGPA_DVEB
+root      1376298  0.3  0.0  448  448      - A      Apr 20 2562:21 wait
+root      1310760  0.3  0.0  448  448      - A      Apr 20 2561:23 wait
+root      1245222  0.3  0.0  448  448      - A      Apr 20 2400:14 wait
+gpaadm   31326426  0.3  0.0 13608 15808      - A      Jun 07 181:47 gwrd -dp pf=/u
+gpaadm   29032524  0.2  0.0 65268 74164      - A    00:34:09  1:13 dw.sapGPA_DVEB
+
+CPU Wait Time Analysis:
+-----------------------
+    root  1114146        0   0   Apr 20      - 3596:15 wait
+    root  1048608        0   0   Apr 20      - 3594:10 wait
+    root   983070        0   0   Apr 20      - 3411:37 wait
+    root  1376298        0   0   Apr 20      - 2562:21 wait
+    root  1310760        0   0   Apr 20      - 2561:23 wait
+    root  1245222        0   0   Apr 20      - 2400:14 wait
+    root  1638450        0   0   Apr 20      - 1350:34 wait
+    root  1572912        0   0   Apr 20      - 1349:59 wait
+    root  1507374        0   0   Apr 20      - 1190:24 wait
+    root   131076        0   0   Apr 20      - 484:31 wait
+    root  1179684        0   0   Apr 20      - 309:22 wait
+    root  1441836        0   0   Apr 20      - 273:15 wait
+    root  2490444        0   0   Apr 20      - 167:55 kbiod
+    root  2752704        1   0   Apr 20      - 43:31 /usr/sbin/syncd 60
+    root  3932284  2883694   0   Apr 20      -  0:00 /usr/sbin/biod 6
+    root   262152        0   0   Apr 20      -  0:00 lrud
+
+
+Check Memory Utilization:
+-------------------------
+Real Memory of Server in KB =  91750400
+
+Average Memory Utilization   =  4157539
+Free Memory Utilization      =  17133463
+
+Top Memory Consuming Processes:
+-------------------------------------------------------------------------------
+     Pid Command          Inuse      Pin     Pgsp  Virtual 64-bit Mthrd  16MB
+11993260 svmon            66475     7984        0    66375      Y     N     N
+13959326 sshd             25563    11508        0    25326      N     N     N
+29360276 bash             25475    11508        0    25285      N     N     N
+27197586 perl5.8.8        25381    11508        0    25342      N     N     N
+
+
+Check SAP specific filesystems:
+-------------------------------
+ 1262.00 1148.86 113.14 92% /usr/sap/interfaces/GPA
+ 220.00 97.46 122.54 45% /sapmnt/GPA
+ 220.00 97.46 122.54 45% /usr/sap/GPA
+ 1262.00 1148.86 113.14 92% /usr/sap/GPA/java
+ 130.00 59.51 70.49 46% /oracle/GPA
+ 3147.00 2323.45 823.55 74% /usr/sap/interfaces/GPA/linde
+ 1030.00 187.53 842.47 19% /usr/sap/interfaces/KPMG/GPA
+I am in for loop now...
+For loop started...
+2
+Entries from LPARLIST: 
+am1ho120 GPA 70 DB 3512 10.139.113.236
+am1ho120
+GPA
+70
+DB
+3512
+10.139.113.236
+moni-server-v.2.5.sh
+
+Check OS specifications:
+------------------------
+Fri Jun 12 01:28:11 MSZ 2015
+am1ho120
+AIX am1ho120 1 6 00F950F14C00
+6100-08-03-1339
+Server is up for          =  53 Days
+Last  1 Min. CPU Average Load =  3.12
+Last  5 Min. CPU Average Load =  4.39
+Last 10 Min. CPU Average Load =  5.67
+
+Check Swap Space:
+-----------------
+Total Swap Space          =  20352MB
+Swap Space Used in %      =  2
+
+Check CPU Utilization:
+----------------------
+User CPU %     =     6
+System CPU %   =     2
+IDLE CPU %     =     82
+WAIT CPU %     =     10
+
+Top 10 CPU processes:
+--------------------
+USER          PID %CPU %MEM   SZ  RSS    TTY STAT    STIME  TIME COMMAND
+oragpa    3736176  0.5  0.0 190488 114272      - A    23:35:36 18:10 oracleGPA (DES
+oragpa   64815274  0.4  0.0 190108 113892      - A    23:30:49 13:19 oracleGPA (DES
+oragpa   23200292  0.3  0.0 190868 114652      - A    00:33:23  4:57 oracleGPA (DES
+oragpa   18284722  0.3  0.0 189940 113724      - A    01:08:41  2:10 oracleGPA (DES
+oragpa    6882028  0.3  0.0 190504 114288      - A    21:34:59 20:39 oracleGPA (DES
+oragpa   39125366  0.2  0.0 204504 128288      - A    00:45:25  2:08 oracleGPA (DES
+oragpa   27590810  0.2  0.0 187956 111740      - A    01:06:35  1:22 oracleGPA (DES
+oragpa    9699724  0.2  0.0 191204 114988      - A    01:00:22  2:04 oracleGPA (DES
+root      3276938  0.1  0.0 4544 4544      - A      Apr 20 3087:34 dog
+root      2949244  0.1  0.0 2624 2624      - A      Apr 20 2949:47 rtcmd
+
+CPU Wait Time Analysis:
+-----------------------
+    root  1376302        0   0   Apr 20      - 3496:56 wait
+    root  1638454        0   0   Apr 20      - 3488:29 wait
+    root  1310764        0   0   Apr 20      - 3486:31 wait
+    root  1900606        0   0   Apr 20      - 3477:40 wait
+    root  1572916        0   0   Apr 20      - 3477:47 wait
+    root  2162758        0   0   Apr 20      - 3471:08 wait
+    root  1835068        0   0   Apr 20      - 3466:56 wait
+    root  2424910        0   0   Apr 20      - 3465:50 wait
+    root  2097220        0   0   Apr 20      - 3458:49 wait
+    root  2359372        0   0   Apr 20      - 3453:07 wait
+    root  2687070        0   0   Apr 20      - 3371:42 wait
+    root  2621532        0   0   Apr 20      - 3358:11 wait
+    root  1114150        0   0   Apr 20      - 3343:29 wait
+    root  1048612        0   0   Apr 20      - 3334:14 wait
+    root  1245226        0   0   Apr 20      - 3141:09 wait
+    root  1507378        0   0   Apr 20      - 3125:10 wait
+    root  1769530        0   0   Apr 20      - 3107:53 wait
+    root  2031682        0   0   Apr 20      - 3093:41 wait
+    root  2293834        0   0   Apr 20      - 3081:27 wait
+    root   983074        0   0   Apr 20      - 2986:25 wait
+    root  2555994        0   0   Apr 20      - 2976:44 wait
+    root   328022        0   0   Apr 20      - 2868:31 wait
+    root   262484        0   0   Apr 20      - 2828:49 wait
+    root   196946        0   0   Apr 20      - 2280:47 wait
+    root   131408        0   0   Apr 20      - 1884:01 wait
+    root  2490456        0   0   Apr 20      - 887:57 wait
+    root   131076        0   0   Apr 20      - 884:25 wait
+    root  2228296        0   0   Apr 20      - 860:29 wait
+    root  1966144        0   0   Apr 20      - 848:17 wait
+    root  1703992        0   0   Apr 20      - 837:15 wait
+    root  1441840        0   0   Apr 20      - 826:16 wait
+    root  1179688        0   0   Apr 20      - 817:01 wait
+    root  3080328        0   0   Apr 20      - 296:53 kbiod
+    root  3735752        1   0   Apr 20      - 86:46 /usr/sbin/syncd 60
+    root   262156        0   0   Apr 20      - 37:13 lrud
+    root  4063408  3866658   0   Apr 20      -  0:00 /usr/sbin/biod 6
+
+
+Check Memory Utilization:
+-------------------------
+Real Memory of Server in KB =  240123904
+
+Average Memory Utilization   =  42676170
+Free Memory Utilization      =  581165
+
+Top Memory Consuming Processes:
+-------------------------------------------------------------------------------
+     Pid Command          Inuse      Pin     Pgsp  Virtual 64-bit Mthrd  16MB
+22741164 svmon            96528     8064        0    96428      Y     N     N
+29294980 sshd             23641    11524        0    23404      N     N     N
+18547104 bash             23612    11524        0    23369      N     N     N
+60752036 perl5.8.8        23443    11524        0    23426      N     N     N
+
+
+Check SAP specific filesystems:
+-------------------------------
+ 1262.00 1148.86 113.14 92% /usr/sap/interfaces/GPA
+ 220.00 97.46 122.54 45% /sapmnt/GPA
+ 220.00 97.46 122.54 45% /usr/sap/GPA
+ 130.00 59.51 70.49 46% /oracle/GPA
+ 130.00 59.51 70.49 46% /oracle/GPA/sapreorg
+ 160.00 0.97 159.03 1% /oracle/GPA/oraarch
+ 960.00 806.03 153.97 84% /oracle/GPA/sapdata1
+ 1120.00 801.33 318.67 72% /oracle/GPA/sapdata2
+ 1030.00 792.23 237.77 77% /oracle/GPA/sapdata3
+ 1280.00 1039.17 240.83 82% /oracle/GPA/sapdata4
+ 1040.00 805.98 234.02 78% /oracle/GPA/sapdata5
+ 1030.00 842.87 187.13 82% /oracle/GPA/sapdata6
+ 1010.00 767.33 242.67 76% /oracle/GPA/sapdata7
+ 1350.00 1074.45 275.55 80% /oracle/GPA/sapdata8
+ 850.00 663.12 186.88 79% /oracle/GPA/sapdata9
+ 880.00 706.39 173.61 81% /oracle/GPA/sapdata10
+ 1100.00 854.88 245.12 78% /oracle/GPA/sapdata11
+ 880.00 767.35 112.65 88% /oracle/GPA/sapdata12
+ 1190.00 1018.46 171.54 86% /oracle/GPA/sapdata13
+ 1440.00 1247.58 192.42 87% /oracle/GPA/sapdata14
+ 1020.00 793.10 226.90 78% /oracle/GPA/sapdata15
+ 1050.00 843.72 206.28 81% /oracle/GPA/sapdata16
+ 6.00 5.03 0.97 84% /oracle/GPA/origlogA
+ 6.00 4.01 1.99 67% /oracle/GPA/origlogB
+ 6.00 4.01 1.99 67% /oracle/GPA/mirrlogA
+ 6.00 4.01 1.99 67% /oracle/GPA/mirrlogB
+ 4000.00 1554.17 2445.83 39% /oracle/GPA/archivpool
+ 3147.00 2324.56 822.44 74% /usr/sap/interfaces/GPA/linde
+ 1262.00 1148.86 113.14 92% /usr/sap/GPA/java
+I am in for loop now...
+For loop started...
+3
+Entries from LPARLIST: 
+am1ho116 GPA 71 AP 3512 10.139.113.71
+am1ho116
+GPA
+71
+AP
+3512
+10.139.113.71
+moni-server-v.2.5.sh
+
+Check OS specifications:
+------------------------
+Fri Jun 12 01:28:21 MSZ 2015
+am1ho116
+AIX am1ho116 1 6 00F950B84C00
+6100-08-03-1339
+Server is up for          =  53 Days
+Last  1 Min. CPU Average Load =  average
+Last  5 Min. CPU Average Load =  0.47
+Last 10 Min. CPU Average Load =  1.21,
+
+Check Swap Space:
+-----------------
+Total Swap Space          =  20352MB
+Swap Space Used in %      =  1
+
+Check CPU Utilization:
+----------------------
+User CPU %     =     4
+System CPU %   =     0
+IDLE CPU %     =     96
+WAIT CPU %     =     0
+
+Top 10 CPU processes:
+--------------------
+USER          PID %CPU %MEM   SZ  RSS    TTY STAT    STIME  TIME COMMAND
+gpaadm    9437338  0.5  0.0 65004 74300      - A    01:08:40  2:10 dw.sapGPA_D71 
+root      1114146  0.3  0.0  448  448      - A      Apr 20 4096:37 wait
+root      1048608  0.3  0.0  448  448      - A      Apr 20 4094:43 wait
+root       983070  0.3  0.0  448  448      - A      Apr 20 3916:48 wait
+root      1638450  0.2  0.0  448  448      - A      Apr 20 2709:42 wait
+root      1572912  0.2  0.0  448  448      - A      Apr 20 2707:09 wait
+root      1507374  0.2  0.0  448  448      - A      Apr 20 2552:19 wait
+root      1376298  0.2  0.0  448  448      - A      Apr 20 3786:25 wait
+root      1310760  0.2  0.0  448  448      - A      Apr 20 3784:32 wait
+root      1245222  0.2  0.0  448  448      - A      Apr 20 3623:00 wait
+
+CPU Wait Time Analysis:
+-----------------------
+    root  1114146        0   0   Apr 20      - 4096:37 wait
+    root  1048608        0   0   Apr 20      - 4094:43 wait
+    root   983070        0   0   Apr 20      - 3916:48 wait
+    root  1376298        0   0   Apr 20      - 3786:25 wait
+    root  1310760        0   0   Apr 20      - 3784:32 wait
+    root  1245222        0   0   Apr 20      - 3623:00 wait
+    root  1638450        0   0   Apr 20      - 2709:42 wait
+    root  1572912        0   0   Apr 20      - 2707:09 wait
+    root  1507374        0   0   Apr 20      - 2552:19 wait
+    root  1900602        0   0   Apr 20      - 1749:20 wait
+    root  1835064        0   0   Apr 20      - 1748:52 wait
+    root  1769526        0   0   Apr 20      - 1605:41 wait
+    root  2162754        0   0   Apr 20      - 1152:40 wait
+    root  2097216        0   0   Apr 20      - 1150:00 wait
+    root  2031678        0   0   Apr 20      - 1001:06 wait
+    root   131076        0   0   Apr 20      - 413:04 wait
+    root  1179684        0   0   Apr 20      - 270:47 wait
+    root  3211362        0   0   Apr 20      - 253:13 kbiod
+    root  1441836        0   0   Apr 20      - 217:33 wait
+    root  1966140        0   0   Apr 20      - 208:30 wait
+    root  1703988        0   0   Apr 20      - 172:34 wait
+    root  3277038        1   0   Apr 20      - 42:33 /usr/sbin/syncd 60
+    root  4522186   720964   0   Apr 20      -  0:00 /usr/sbin/biod 6
+    root   262152        0   0   Apr 20      -  0:00 lrud
+
+
+Check Memory Utilization:
+-------------------------
+Real Memory of Server in KB =  153092096
+
+Average Memory Utilization   =  5770262
+Free Memory Utilization      =  32100013
+
+Top Memory Consuming Processes:
+-------------------------------------------------------------------------------
+     Pid Command          Inuse      Pin     Pgsp  Virtual 64-bit Mthrd  16MB
+ 5177414 svmon            61213     8000        0    61131      Y     N     N
+11403284 sshd             25548    11476        0    25311      N     N     N
+20250794 bash             25514    11476        0    25271      N     N     N
+16580628 perl5.8.8        25368    11476        0    25329      N     N     N
+
+
+Check SAP specific filesystems:
+-------------------------------
+ 1262.00 1148.86 113.14 92% /usr/sap/interfaces/GPA
+ 220.00 97.46 122.54 45% /sapmnt/GPA
+ 220.00 97.46 122.54 45% /usr/sap/GPA
+ 130.00 59.51 70.49 46% /oracle/GPA
+ 3147.00 2325.91 821.09 74% /usr/sap/interfaces/GPA/linde
+ 1030.00 187.53 842.47 19% /usr/sap/interfaces/KPMG/GPA
+ 1262.00 1148.86 113.14 92% /usr/sap/GPA/java
+I am in for loop now...
+For loop started...
+4
+Entries from LPARLIST: 
+am2ho127 GPA 72 AP 3512 10.139.113.72
+am2ho127
+GPA
+72
+AP
+3512
+10.139.113.72
+moni-server-v.2.5.sh
+
+Check OS specifications:
+------------------------
+Fri Jun 12 01:28:33 MSZ 2015
+am2ho127
+AIX am2ho127 1 6 00F950FA4C00
+6100-08-03-1339
+Server is up for          =  25 Days
+Last  1 Min. CPU Average Load =  average
+Last  5 Min. CPU Average Load =  3.13
+Last 10 Min. CPU Average Load =  3.44,
+
+Check Swap Space:
+-----------------
+Total Swap Space          =  20352MB
+Swap Space Used in %      =  1
+
+Check CPU Utilization:
+----------------------
+User CPU %     =     2
+System CPU %   =     0
+IDLE CPU %     =     98
+WAIT CPU %     =     0
+
+Top 10 CPU processes:
+--------------------
+USER          PID %CPU %MEM   SZ  RSS    TTY STAT    STIME  TIME COMMAND
+gpaadm   19136680  1.3  0.0 63992 73240      - A    23:35:36 29:09 dw.sapGPA_D72 
+gpaadm   21299372  0.6  0.0 95480 104728      - A    21:34:58 29:46 dw.sapGPA_D72 
+gpaadm    9830462  0.5  0.0 85968 95152      - A    00:11:43  7:10 dw.sapGPA_D72 
+gpaadm   31064260  0.4  0.0 98072 107192      - A    19:57:58 23:59 dw.sapGPA_D75 
+root      1376298  0.3  0.0  448  448      - A      May 18 1834:46 wait
+root      1310760  0.3  0.0  448  448      - A      May 18 1833:48 wait
+root      1114146  0.3  0.0  448  448      - A      May 18 1998:40 wait
+root      1048608  0.3  0.0  448  448      - A      May 18 1998:13 wait
+root       983070  0.3  0.0  448  448      - A      May 18 1883:12 wait
+gpaadm    4260022  0.3  0.0 120464 129584      - A    23:19:27  7:24 dw.sapGPA_D75 
+
+CPU Wait Time Analysis:
+-----------------------
+    root  1114146        0   0   May 18      - 1998:40 wait
+    root  1048608        0   0   May 18      - 1998:13 wait
+    root   983070        0   0   May 18      - 1883:12 wait
+    root  1376298        0   0   May 18      - 1834:46 wait
+    root  1310760        0   0   May 18      - 1833:48 wait
+    root  1245222        0   0   May 18      - 1725:11 wait
+    root  1638450        0   0   May 18      - 1318:48 wait
+    root  1572912        0   0   May 18      - 1317:45 wait
+    root  1507374        0   0   May 18      - 1210:32 wait
+    root  1900602        0   0   May 18      - 913:00 wait
+    root  1835064        0   0   May 18      - 911:59 wait
+    root  1769526        0   0   May 18      - 811:05 wait
+    root  2162754        0   0   May 18      - 647:56 wait
+    root  2097216        0   0   May 18      - 647:15 wait
+    root  2031678        0   0   May 18      - 543:04 wait
+    root   131076        0   0   May 18      - 218:23 wait
+    root  1179684        0   0   May 18      - 158:19 wait
+    root  1441836        0   0   May 18      - 137:14 wait
+    root  2818138        0  16   May 18      - 132:31 kbiod
+    root  1966140        0   0   May 18      - 127:47 wait
+    root  1703988        0   0   May 18      - 117:10 wait
+    root  3342542        1   0   May 18      - 20:19 /usr/sbin/syncd 60
+    root  3276846   720996   0   May 18      -  0:00 /usr/sbin/biod 6
+    root   262152        0   0   May 18      -  0:10 lrud
+
+
+Check Memory Utilization:
+-------------------------
+Real Memory of Server in KB =  153092096
+
+Average Memory Utilization   =  7487881
+Free Memory Utilization      =  28865478
+
+Top Memory Consuming Processes:
+-------------------------------------------------------------------------------
+     Pid Command          Inuse      Pin     Pgsp  Virtual 64-bit Mthrd  16MB
+27918584 svmon            72932     8000        0    72832      Y     N     N
+36503582 sshd             25547    11492        0    25310      N     N     N
+16187414 bash             25514    11492        0    25271      N     N     N
+26017970 perl5.8.8        25357    11492        0    25329      N     N     N
+
+
+Check SAP specific filesystems:
+-------------------------------
+ 1262.00 1148.86 113.14 92% /usr/sap/interfaces/GPA
+ 220.00 97.46 122.54 45% /sapmnt/GPA
+ 220.00 97.46 122.54 45% /usr/sap/GPA
+ 130.00 59.51 70.49 46% /oracle/GPA
+ 1030.00 187.53 842.47 19% /usr/sap/interfaces/KPMG/GPA
+ 3147.00 2327.01 819.99 74% /usr/sap/interfaces/GPA/linde
+ 1262.00 1148.86 113.14 92% /usr/sap/GPA/java
+I am in for loop now...
+For loop started...
+5
+Entries from LPARLIST: 
+am2ho133 GPA 73 AP 3512 10.139.113.73
+am2ho133
+GPA
+73
+AP
+3512
+10.139.113.73
+moni-server-v.2.5.sh
+
+Check OS specifications:
+------------------------
+Fri Jun 12 01:28:42 MSZ 2015
+am2ho133
+AIX am2ho133 1 6 00F950FA4C00
+6100-08-03-1339
+Server is up for          =  25 Days
+Last  1 Min. CPU Average Load =  average
+Last  5 Min. CPU Average Load =  1.72
+Last 10 Min. CPU Average Load =  2.35,
+
+Check Swap Space:
+-----------------
+Total Swap Space          =  20352MB
+Swap Space Used in %      =  1
+
+Check CPU Utilization:
+----------------------
+User CPU %     =     2
+System CPU %   =     0
+IDLE CPU %     =     98
+WAIT CPU %     =     0
+
+Top 10 CPU processes:
+--------------------
+USER          PID %CPU %MEM   SZ  RSS    TTY STAT    STIME  TIME COMMAND
+gpaadm   10748080  1.4  0.0 61136 69964      - A    22:36:05 49:38 dw.sapGPA_D79 
+gpaadm   21168360  0.5  0.0 75524 84160      - A    23:30:49 12:18 dw.sapGPA_D73 
+gpaadm   34144372  0.4  0.0 43824 52396      - A    00:31:46  4:09 dw.sapGPA_D79 
+gpaadm   31850538  0.4  0.0 48800 57436      - A    00:39:18  3:42 dw.sapGPA_D73 
+gpaadm   17498282  0.4  0.0 91892 100464      - A    00:04:19  6:17 dw.sapGPA_D79 
+root      1114150  0.3  0.0  448  448      - A      May 18 1897:36 wait
+root      1048612  0.3  0.0  448  448      - A      May 18 1897:34 wait
+root       983074  0.3  0.0  448  448      - A      May 18 1832:48 wait
+root      1376302  0.2  0.0  448  448      - A      May 18 1666:34 wait
+root      1310764  0.2  0.0  448  448      - A      May 18 1665:33 wait
+
+CPU Wait Time Analysis:
+-----------------------
+    root  1114150        0   0   May 18      - 1897:36 wait
+    root  1048612        0   0   May 18      - 1897:34 wait
+    root   983074        0   0   May 18      - 1832:48 wait
+    root  1376302        0   0   May 18      - 1666:34 wait
+    root  1310764        0   0   May 18      - 1665:33 wait
+    root  1245226        0   0   May 18      - 1606:26 wait
+    root  1638454        0   0   May 18      - 1046:50 wait
+    root  1572916        0   0   May 18      - 1046:06 wait
+    root  1507378        0   0   May 18      - 988:41 wait
+    root  1900606        0   0   May 18      - 671:08 wait
+    root  1835068        0   0   May 18      - 670:41 wait
+    root  1769530        0   0   May 18      - 617:59 wait
+    root  2162758        0   0   May 18      - 535:46 wait
+    root  2097220        0   0   May 18      - 535:24 wait
+    root  2031682        0   0   May 18      - 481:13 wait
+    root   131076        0   0   May 18      - 176:43 wait
+    root  3342442        0   0   May 18      - 147:44 kbiod
+    root  1179688        0   0   May 18      - 113:04 wait
+    root  1966144        0   0   May 18      - 99:35 wait
+    root  1441840        0   0   May 18      - 89:46 wait
+    root  1703992        0   0   May 18      - 72:22 wait
+    root  2818234        1   0   May 18      - 20:46 /usr/sbin/syncd 60
+    root   262156        0   0   May 18      -  2:36 lrud
+    root  4325516  3866672   0   May 18      -  0:00 /usr/sbin/biod 6
+
+
+Check Memory Utilization:
+-------------------------
+Real Memory of Server in KB =  153092096
+
+Average Memory Utilization   =  5549069
+Free Memory Utilization      =  30349061
+
+Top Memory Consuming Processes:
+-------------------------------------------------------------------------------
+     Pid Command          Inuse      Pin     Pgsp  Virtual 64-bit Mthrd  16MB
+35782706 svmon            61531     8000        0    61431      Y     N     N
+19923062 sshd             25515    11524        0    25278      N     N     N
+30670990 bash             25429    11524        0    25239      N     N     N
+22806640 perl5.8.8        25317    11524        0    25296      N     N     N
+
+
+Check SAP specific filesystems:
+-------------------------------
+ 1262.00 1148.86 113.14 92% /usr/sap/interfaces/GPA
+ 220.00 97.46 122.54 45% /sapmnt/GPA
+ 220.00 97.46 122.54 45% /usr/sap/GPA
+ 130.00 59.51 70.49 46% /oracle/GPA
+ 1030.00 187.53 842.47 19% /usr/sap/interfaces/KPMG/GPA
+ 3147.00 2327.93 819.07 74% /usr/sap/interfaces/GPA/linde
+ 1262.00 1148.86 113.14 92% /usr/sap/GPA/java
+I am in for loop now...
+For loop started...
+6
+Entries from LPARLIST: 
+am2ho127 GPA 75 AP 3512 10.139.113.75
+am2ho127
+GPA
+75
+AP
+3512
+10.139.113.75
+moni-server-v.2.5.sh
+
+Check OS specifications:
+------------------------
+Fri Jun 12 01:28:53 MSZ 2015
+am2ho127
+AIX am2ho127 1 6 00F950FA4C00
+6100-08-03-1339
+Server is up for          =  25 Days
+Last  1 Min. CPU Average Load =  average
+Last  5 Min. CPU Average Load =  3.06
+Last 10 Min. CPU Average Load =  3.41,
+
+Check Swap Space:
+-----------------
+Total Swap Space          =  20352MB
+Swap Space Used in %      =  1
+
+Check CPU Utilization:
+----------------------
+User CPU %     =     2
+System CPU %   =     0
+IDLE CPU %     =     98
+WAIT CPU %     =     0
+
+Top 10 CPU processes:
+--------------------
+USER          PID %CPU %MEM   SZ  RSS    TTY STAT    STIME  TIME COMMAND
+gpaadm   19136680  1.3  0.0 70848 80096      - A    23:35:36 29:15 dw.sapGPA_D72 
+gpaadm   21299372  0.6  0.0 85920 95168      - A    21:34:58 29:52 dw.sapGPA_D72 
+gpaadm    9830462  0.5  0.0 85968 95152      - A    00:11:43  7:10 dw.sapGPA_D72 
+gpaadm   31064260  0.4  0.0 98072 107192      - A    19:57:58 24:07 dw.sapGPA_D75 
+root      1376298  0.3  0.0  448  448      - A      May 18 1834:48 wait
+root      1310760  0.3  0.0  448  448      - A      May 18 1833:49 wait
+root      1114146  0.3  0.0  448  448      - A      May 18 1998:42 wait
+root      1048608  0.3  0.0  448  448      - A      May 18 1998:14 wait
+root       983070  0.3  0.0  448  448      - A      May 18 1883:13 wait
+gpaadm    4260022  0.3  0.0 120464 129584      - A    23:19:27  7:24 dw.sapGPA_D75 
+
+CPU Wait Time Analysis:
+-----------------------
+    root  1114146        0   0   May 18      - 1998:42 wait
+    root  1048608        0   0   May 18      - 1998:14 wait
+    root   983070        0   0   May 18      - 1883:13 wait
+    root  1376298        0   0   May 18      - 1834:48 wait
+    root  1310760        0   0   May 18      - 1833:49 wait
+    root  1245222        0   0   May 18      - 1725:12 wait
+    root  1638450        0   0   May 18      - 1318:49 wait
+    root  1572912        0   0   May 18      - 1317:46 wait
+    root  1507374        0   0   May 18      - 1210:33 wait
+    root  1900602        0   0   May 18      - 913:00 wait
+    root  1835064        0   0   May 18      - 911:59 wait
+    root  1769526        0   0   May 18      - 811:05 wait
+    root  2162754        0   0   May 18      - 647:56 wait
+    root  2097216        0   0   May 18      - 647:16 wait
+    root  2031678        0   0   May 18      - 543:04 wait
+    root   131076        0   0   May 18      - 218:23 wait
+    root  1179684        0   0   May 18      - 158:19 wait
+    root  1441836        0   0   May 18      - 137:14 wait
+    root  2818138        0  30   May 18      - 132:33 kbiod
+    root  1966140        0   0   May 18      - 127:47 wait
+    root  1703988        0   0   May 18      - 117:10 wait
+    root  3342542        1   0   May 18      - 20:19 /usr/sbin/syncd 60
+    root  3276846   720996   0   May 18      -  0:00 /usr/sbin/biod 6
+    root   262152        0   0   May 18      -  0:10 lrud
+
+
+Check Memory Utilization:
+-------------------------
+Real Memory of Server in KB =  153092096
+
+Average Memory Utilization   =  7488187
+Free Memory Utilization      =  29743365
+
+Top Memory Consuming Processes:
+-------------------------------------------------------------------------------
+     Pid Command          Inuse      Pin     Pgsp  Virtual 64-bit Mthrd  16MB
+27918530 svmon            72925     8000        0    72825      Y     N     N
+19726404 sshd             25548    11492        0    25311      N     N     N
+37617840 bash             25514    11492        0    25271      N     N     N
+11796694 perl5.8.8        25356    11492        0    25328      N     N     N
+
+
+Check SAP specific filesystems:
+-------------------------------
+ 1262.00 1148.86 113.14 92% /usr/sap/interfaces/GPA
+ 220.00 97.46 122.54 45% /sapmnt/GPA
+ 220.00 97.46 122.54 45% /usr/sap/GPA
+ 130.00 59.51 70.49 46% /oracle/GPA
+ 1030.00 187.53 842.47 19% /usr/sap/interfaces/KPMG/GPA
+ 3147.00 2323.66 823.34 74% /usr/sap/interfaces/GPA/linde
+ 1262.00 1148.86 113.14 92% /usr/sap/GPA/java
+I am in for loop now...
+For loop started...
+7
+Entries from LPARLIST: 
+am1ho116 GPA 78 AP 3512 10.139.113.78
+am1ho116
+GPA
+78
+AP
+3512
+10.139.113.78
+moni-server-v.2.5.sh
+
+Check OS specifications:
+------------------------
+Fri Jun 12 01:29:46 MSZ 2015
+am1ho116
+AIX am1ho116 1 6 00F950B84C00
+6100-08-03-1339
+Server is up for          =  53 Days
+Last  1 Min. CPU Average Load =  average
+Last  5 Min. CPU Average Load =  0.24
+Last 10 Min. CPU Average Load =  0.98,
+
+Check Swap Space:
+-----------------
+Total Swap Space          =  20352MB
+Swap Space Used in %      =  1
+
+Check CPU Utilization:
+----------------------
+User CPU %     =     4
+System CPU %   =     0
+IDLE CPU %     =     96
+WAIT CPU %     =     0
+
+Top 10 CPU processes:
+--------------------
+USER          PID %CPU %MEM   SZ  RSS    TTY STAT    STIME  TIME COMMAND
+gpaadm    9437338  0.5  0.0 65136 74432      - A    01:08:40  2:10 dw.sapGPA_D71 
+root      1114146  0.3  0.0  448  448      - A      Apr 20 4096:38 wait
+root      1048608  0.3  0.0  448  448      - A      Apr 20 4094:44 wait
+root       983070  0.3  0.0  448  448      - A      Apr 20 3916:50 wait
+root      1638450  0.2  0.0  448  448      - A      Apr 20 2709:42 wait
+root      1572912  0.2  0.0  448  448      - A      Apr 20 2707:09 wait
+root      1507374  0.2  0.0  448  448      - A      Apr 20 2552:20 wait
+root      1376298  0.2  0.0  448  448      - A      Apr 20 3786:25 wait
+root      1310760  0.2  0.0  448  448      - A      Apr 20 3784:32 wait
+root      1245222  0.2  0.0  448  448      - A      Apr 20 3623:00 wait
+
+CPU Wait Time Analysis:
+-----------------------
+    root  1114146        0   0   Apr 20      - 4096:38 wait
+    root  1048608        0   0   Apr 20      - 4094:44 wait
+    root   983070        0   0   Apr 20      - 3916:50 wait
+    root  1376298        0   0   Apr 20      - 3786:25 wait
+    root  1310760        0   0   Apr 20      - 3784:32 wait
+    root  1245222        0   0   Apr 20      - 3623:00 wait
+    root  1638450        0   0   Apr 20      - 2709:42 wait
+    root  1572912        0   0   Apr 20      - 2707:09 wait
+    root  1507374        0   0   Apr 20      - 2552:20 wait
+    root  1900602        0   0   Apr 20      - 1749:20 wait
+    root  1835064        0   0   Apr 20      - 1748:52 wait
+    root  1769526        0   0   Apr 20      - 1605:41 wait
+    root  2162754        0   0   Apr 20      - 1152:40 wait
+    root  2097216        0   0   Apr 20      - 1150:01 wait
+    root  2031678        0   0   Apr 20      - 1001:06 wait
+    root   131076        0   0   Apr 20      - 413:04 wait
+    root  1179684        0   0   Apr 20      - 270:47 wait
+    root  3211362        0   0   Apr 20      - 253:13 kbiod
+    root  1441836        0   0   Apr 20      - 217:33 wait
+    root  1966140        0   0   Apr 20      - 208:30 wait
+    root  1703988        0   0   Apr 20      - 172:34 wait
+    root  3277038        1   0   Apr 20      - 42:33 /usr/sbin/syncd 60
+    root  4522186   720964   0   Apr 20      -  0:00 /usr/sbin/biod 6
+    root   262152        0   0   Apr 20      -  0:00 lrud
+
+
+Check Memory Utilization:
+-------------------------
+Real Memory of Server in KB =  153092096
+
+Average Memory Utilization   =  5772114
+Free Memory Utilization      =  32098079
+
+Top Memory Consuming Processes:
+-------------------------------------------------------------------------------
+     Pid Command          Inuse      Pin     Pgsp  Virtual 64-bit Mthrd  16MB
+11927556 svmon            61415     8000        0    61321      Y     N     N
+13631500 sshd             25548    11476        0    25311      N     N     N
+24248516 bash             25514    11476        0    25271      N     N     N
+20578416 perl5.8.8        25368    11476        0    25329      N     N     N
+
+
+Check SAP specific filesystems:
+-------------------------------
+ 1262.00 1148.86 113.14 92% /usr/sap/interfaces/GPA
+ 220.00 97.46 122.54 45% /sapmnt/GPA
+ 220.00 97.46 122.54 45% /usr/sap/GPA
+ 130.00 59.51 70.49 46% /oracle/GPA
+ 3147.00 2324.01 822.99 74% /usr/sap/interfaces/GPA/linde
+ 1030.00 187.53 842.47 19% /usr/sap/interfaces/KPMG/GPA
+ 1262.00 1148.86 113.14 92% /usr/sap/GPA/java
+I am in for loop now...
+For loop started...
+8
+Entries from LPARLIST: 
+am2ho133 GPA 79 AP 3512 10.139.113.79
+am2ho133
+GPA
+79
+AP
+3512
+10.139.113.79
+moni-server-v.2.5.sh
+
+Check OS specifications:
+------------------------
+Fri Jun 12 01:29:56 MSZ 2015
+am2ho133
+AIX am2ho133 1 6 00F950FA4C00
+6100-08-03-1339
+Server is up for          =  25 Days
+Last  1 Min. CPU Average Load =  average
+Last  5 Min. CPU Average Load =  1.93
+Last 10 Min. CPU Average Load =  2.26,
+
+Check Swap Space:
+-----------------
+Total Swap Space          =  20352MB
+Swap Space Used in %      =  1
+
+Check CPU Utilization:
+----------------------
+User CPU %     =     2
+System CPU %   =     0
+IDLE CPU %     =     98
+WAIT CPU %     =     0
+
+Top 10 CPU processes:
+--------------------
+USER          PID %CPU %MEM   SZ  RSS    TTY STAT    STIME  TIME COMMAND
+gpaadm   10748080  1.4  0.0 61136 69964      - A    22:36:05 50:22 dw.sapGPA_D79 
+gpaadm   21168360  0.5  0.0 75624 84260      - A    23:30:49 12:18 dw.sapGPA_D73 
+gpaadm   34144372  0.4  0.0 44508 53080      - A    00:31:46  4:22 dw.sapGPA_D79 
+gpaadm   31850538  0.4  0.0 48800 57436      - A    00:39:18  3:42 dw.sapGPA_D73 
+gpaadm   17498282  0.4  0.0 91892 100464      - A    00:04:19  6:17 dw.sapGPA_D79 
+root      1114150  0.3  0.0  448  448      - A      May 18 1897:38 wait
+root      1048612  0.3  0.0  448  448      - A      May 18 1897:36 wait
+root       983074  0.3  0.0  448  448      - A      May 18 1832:50 wait
+root      1376302  0.2  0.0  448  448      - A      May 18 1666:43 wait
+root      1310764  0.2  0.0  448  448      - A      May 18 1665:42 wait
+
+CPU Wait Time Analysis:
+-----------------------
+    root  1114150        0   0   May 18      - 1897:38 wait
+    root  1048612        0   0   May 18      - 1897:36 wait
+    root   983074        0   0   May 18      - 1832:50 wait
+    root  1376302        0   0   May 18      - 1666:43 wait
+    root  1310764        0   0   May 18      - 1665:42 wait
+    root  1245226        0   0   May 18      - 1606:35 wait
+    root  1638454        0   0   May 18      - 1046:53 wait
+    root  1572916        0   0   May 18      - 1046:09 wait
+    root  1507378        0   0   May 18      - 988:44 wait
+    root  1900606        0   0   May 18      - 671:09 wait
+    root  1835068        0   0   May 18      - 670:42 wait
+    root  1769530        0   0   May 18      - 618:00 wait
+    root  2162758        0   0   May 18      - 535:47 wait
+    root  2097220        0   0   May 18      - 535:24 wait
+    root  2031682        0   0   May 18      - 481:13 wait
+    root   131076        0   0   May 18      - 176:43 wait
+    root  3342442        0   0   May 18      - 147:44 kbiod
+    root  1179688        0   0   May 18      - 113:04 wait
+    root  1966144        0   0   May 18      - 99:35 wait
+    root  1441840        0   0   May 18      - 89:46 wait
+    root  1703992        0   0   May 18      - 72:22 wait
+    root  2818234        1   0   May 18      - 20:46 /usr/sbin/syncd 60
+    root   262156        0   0   May 18      -  2:36 lrud
+    root  4325516  3866672   0   May 18      -  0:00 /usr/sbin/biod 6
+
+
+Check Memory Utilization:
+-------------------------
+Real Memory of Server in KB =  153092096
+
+Average Memory Utilization   =  5554993
+Free Memory Utilization      =  30343134
+
+Top Memory Consuming Processes:
+-------------------------------------------------------------------------------
+     Pid Command          Inuse      Pin     Pgsp  Virtual 64-bit Mthrd  16MB
+28967002 svmon            61445     8000        0    61345      Y     N     N
+19923112 sshd             25513    11524        0    25276      N     N     N
+33751042 bash             25429    11524        0    25239      N     N     N
+33095764 perl5.8.8        25317    11524        0    25296      N     N     N
+
+
+Check SAP specific filesystems:
+-------------------------------
+ 1262.00 1148.86 113.14 92% /usr/sap/interfaces/GPA
+ 220.00 97.46 122.54 45% /sapmnt/GPA
+ 220.00 97.46 122.54 45% /usr/sap/GPA
+ 130.00 59.51 70.49 46% /oracle/GPA
+ 1030.00 187.53 842.47 19% /usr/sap/interfaces/KPMG/GPA
+ 3147.00 2325.02 821.98 74% /usr/sap/interfaces/GPA/linde
+ 1262.00 1148.86 113.14 92% /usr/sap/GPA/java
+</body></html>
